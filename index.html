@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Home IoT Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header class="dashboard-header">
+            <div>
+                <h1>SmartHome</h1>
+                <p class="subtitle">Welcome back, User</p>
+            </div>
+            <div class="system-status">● System Operational</div>
+        </header>
+
+        <main class="grid-layout">
+            <div class="card">
+                <div class="card-info">
+                    <span class="icon">💡</span>
+                    <h3>Living Room Lights</h3>
+                    <p class="status active">Status: Active</p>
+                </div>
+                <div class="toggle-switch container-active">
+                    <div class="circle right"></div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-info">
+                    <span class="icon">🌡️</span>
+                    <h3>Smart Thermostat</h3>
+                    <p class="status active">Target: 22°C</p>
+                </div>
+                <div class="toggle-switch container-active">
+                    <div class="circle right"></div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-info">
+                    <span class="icon">🔒</span>
+                    <h3>Main Door Lock</h3>
+                    <p class="status active">Status: Secured</p>
+                </div>
+                <div class="toggle-switch container-active">
+                    <div class="circle right"></div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-info">
+                    <span class="icon">🎵</span>
+                    <h3>Smart Audio</h3>
+                    <p class="status text-muted">Acoustic Chill</p>
+                </div>
+                <div class="toggle-switch container-inactive">
+                    <div class="circle left"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

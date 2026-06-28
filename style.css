@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+body {
+    background-color: #0f172a;
+    color: #f8fafc;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.dashboard-container {
+    width: 100%;
+    max-width: 1100px;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #334155;
+    padding-bottom: 20px;
+}
+
+h1 {
+    color: #38bdf8;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.subtitle {
+    color: #94a3b8;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.system-status {
+    background-color: #059669;
+    color: #ecfdf5;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+}
+
+.card {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
+
+.icon {
+    font-size: 24px;
+    display: block;
+    margin-bottom: 16px;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.status {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.active {
+    color: #38bdf8;
+}
+
+.text-muted {
+    color: #64748b;
+}
+
+.toggle-switch {
+    width: 50px;
+    height: 26px;
+    border-radius: 15px;
+    padding: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.container-active {
+    background-color: #38bdf8;
+    justify-content: flex-end;
+}
+
+.container-inactive {
+    background-color: #475569;
+    justify-content: flex-start;
+}
+
+.circle {
+    width: 18px;
+    height: 18px;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
