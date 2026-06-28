@@ -12,7 +12,7 @@
             <div>
                 <h1>SmartHome</h1>
                 <p class="subtitle">Welcome back, Subhalakshmi</p>
-                
+
             </div>
             <div class="system-status">● System Operational</div>
         </header>
@@ -63,5 +63,32 @@
             </div>
         </main>
     </div>
+    <script>
+        const toggles = document.querySelectorAll('.toggle-switch');
+        toggles.forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                // Toggle the background color class
+                toggle.classList.toggle('container-active');
+                toggle.classList.toggle('container-inactive');
+                
+                // Find the status text inside the same card
+                const statusText = toggle.parentElement.querySelector('.status');
+                
+                // Update the text based on the switch position
+                if (toggle.classList.contains('container-active')) {
+                    if (statusText.textContent.includes('Lights')) {
+                        statusText.textContent = 'Status: Active';
+                    } else if (statusText.textContent.includes('Target')) {
+                        statusText.textContent = 'Target: 22°C';
+                    } else {
+                        statusText.textContent = 'Status: Secured';
+                    }
+                } else {
+                    statusText.textContent = 'Status: Off';
+                }
+            });
+        });
+    </script>
+</body>
 </body>
 </html>
